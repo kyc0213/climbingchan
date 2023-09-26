@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climbing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css'>
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/indexstyle.css">
+    <link rel="stylesheet" href="./css/slide.css">
+
+</head>
+
+<body>
+    <nav>
+        <button id="h1" class="n1" onclick="scrollToSection('home')"><span>Home</span></button>
+        <button id="h2" class="n2" onclick="scrollToSection('genre')"><span>Genre</span></button>
+        <button id="h3" class="n3" onclick="scrollToSection('hold-type')"><span>Hold Type</span></button>
+        <button id="h4" class="n4" onclick="scrollToSection('technique')"><span>Technique</span></button>
+    </nav>
+
+    <section id="technique">
+        <div>
+            <div>
+                <a href="/technique.html">
+                    Technique
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hold-type">
+        <div class="container">
+
+            <div class="slider">
+        
+                <div class="box1 box">
+                    <div class="bg"></div>
+                    <div class="details" style="position: relative;">
+                        <img src="/img/hold_type/jug_hold_1.png" style="position: absolute; bottom: 90px; object-fit: contain; ">
+                        <h1 style="position: relative; left: 400px; bottom: 50px;">Jug</h1>
+                        <p style="position: relative; left: 660px;">
+                            손가락을 벌려서 잡을 수 있는 <br>편하고 큰 홀드
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="box2 box">
+                    <div class="bg"></div>
+                    <div class="details" style="position: relative;">
+                        <img src="/img/hold_type/hold_slopper_2.png" style="position: absolute; bottom: 30px; right: 20px; object-fit: contain; ">
+                        <h1 style="position: relative; left: 570px; bottom: 50px;">Slopper</h1>
+                        <p style="position: relative; left: 650px;">
+                            모나거나 구멍 혹은 튀어나온 곳이 없어 <br>손바닥 전체로 마찰력을 주어 잡는 홀드
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="box3 box">
+                    <div class="bg"></div>
+                    <div class="details" style="position: relative;">
+                        <img src="/img/hold_type/hold_pinch_3.png" style="position: absolute; bottom: 30px; right: 5px; object-fit: contain; ">
+                        <h1 style="position: relative; left: 475px; bottom: 50px;">Pinch</h1>
+                        <p style="position: relative; left: 650px;">
+                            엄지손가락과 나머지 손가락으로 <br>홀드를 꼬집듯 잡는 홀드
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="box4 box">
+                    <div class="bg"></div>
+                    <div class="details" style="position: relative;">
+                        <img src="/img/hold_type/hold_pocket_1.png" style="position: absolute; bottom: 30px; right: 20px; object-fit: contain; ">
+                        <h1 style="position: relative; left: 530px; bottom: 50px;">Pocket</h1>
+                        <p style="position: relative; left: 650px;">
+                            구멍이 있고 손가락으로만 잡는 홀드
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="box5 box">
+                    <div class="bg"></div>
+                    <div class="details" style="position: relative;">
+                        <img src="/img/hold_type/hold_crimp_2.png" style="position: absolute; bottom: 30px; right: 20px; object-fit: contain; ">
+                        <h1 style="position: relative; left: 490px; bottom: 50px;">Crimp</h1>
+                        <p style="position: relative; left: 650px;">
+                            아주 작은 홀드로 <br> 손가락 몇 개만 걸칠 수 있는 홀드
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91">
+                <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91">
+                <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff" /></svg>
+            <div class="trail">
+                <div class="box1 active">Jug</div>
+                <div class="box2">Pinch</div>
+                <div class="box3">Slopper</div>
+                <div class="box4">Pocket</div>
+                <div class="box5">Crimp</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="genre">
+        <div class="g_lead">
+            <a href="lead.html">
+                <img alt="genre_lead_button" src="img/carabiner_shape.png">
+                <div>lead</div>
+            </a>
+        </div>
+
+        <div class="g_bouldering">
+            <a href="boulderinng.html">
+                <img alt="genre_bouldering_button" src="img/shoes.png">
+                <div>bouldering</div>
+            </a>
+        </div>
+
+        <div class="g_speed">
+            <a href="speed.html">
+                <img alt="genre_speed_button" src="img/speed_hold.png">
+                <div>speed</div>
+            </a>
+        </div>
+    </section>
+
+    <section id="home">
+        <div>
+            <img alt="climbing" src="img/climbing_text_02.png">
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2023 Climbing</p>
+    </footer>
+
+    <script src="js/scrollup.js"></script>
+    <script src="js/nav_button_scrolltosection.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js'></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <!-- partial -->
+    <script  src="js/slide.js"></script>
+</body>
+
+</html>

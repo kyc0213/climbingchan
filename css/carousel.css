@@ -1,0 +1,50 @@
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background-image: url('img/hold_type/jug_hold_1.png');
+  background-size: cover;
+}
+.item:nth-child(2) {
+  background-image: url('img/hold_type/hold_pinch_2.png');
+  background-size: cover;
+}
+.item:nth-child(3) {
+  background-image: url('img/hold_type/hold_slopper_3.png');
+  background-size: cover;
+}
+.item:nth-child(4) {
+  background-image: url('img/hold_type/hold_pocket_1.png');
+  background-size: cover;
+}
+.item:nth-child(5) {
+  background-image: url('img/hold_type/hold_crimp_2.png');
+  background-size: cover;
+}

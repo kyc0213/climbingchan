@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    position: relative;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  /* 내비게이션 스타일 */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 99999999;
+  }
+
+  nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 50px;
+    /* SVG 파일로 버튼 테두리 추가 */
+    background-size: contain;
+    /* 이미지를 버튼 크기에 맞게 조절 */
+    background-repeat: no-repeat;
+    width: 180px;
+    /* SVG 이미지의 너비 */
+    height: 180px;
+    /* SVG 이미지의 높이 */
+  }
+
+  nav button span {
+    color: black;
+    position: relative;
+    bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .n1 {
+    background-image: url("/img/nav_icon_home2_line.svg");
+  }
+
+  .n2 {
+    background-image: url("/img/nav_icon_genre2_line.svg");
+  }
+
+  .n3 {
+    background-image: url("/img/nav_icon_hold_type2_line.svg");
+    width: 250px;
+    height: 250px;
+  }
+
+  .n4 {
+    background-image: url("/img/nav_icon_technique2_line.svg");
+  }
+  .wrap {
+    position: relative;
+  }
+
+  img {
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 60%;
+    height: auto;
+  }
+
+  #leadtext {
+    /* float: right; */
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    position: absolute;
+    right: 70px;
+    bottom: 200px;
+    text-align: right;
+    font-weight: 500; 
+  }
+
+  #leadtext p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 350px;
+  }
+
+  #leadtext h1 {
+    font-size: 80px;
+    color: #FA4659;
+    margin-bottom: 30px;
+  }
+
+  #leadtext h2 {
+    font-size: 14px;
+    color: gray;
+  }
+
+  #leadtext h3 {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    background-color: #00ff00;
+    /* 연두색 배경색 */
+  }
+
+  footer p {
+    text-align: center;
+    color: #333;
+    /* 텍스트 색상 */
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+  }
